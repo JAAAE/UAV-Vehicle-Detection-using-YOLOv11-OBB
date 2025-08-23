@@ -12,7 +12,7 @@ A web-based tool for detecting vehicles from UAV imagery using **YOLOv11 with Or
 - Real-time vehicle detection over user-defined regions.
 - Export detection results as **GeoJSON**.
 - Integrates **YOLOv11 OBB model** with **Python FastAPI backend**.
-- Automatically fetches tiles from Taiwan's **UAV WMTS**.
+- Automatically fetches **UAV WMTS** tiles from Taiwan's National Land Surveying and Mapping Center, Ministry of the Interior(NLSC).
 
 ---
 
