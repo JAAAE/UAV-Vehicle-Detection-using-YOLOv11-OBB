@@ -6,12 +6,12 @@ A web-based tool for detecting vehicles from UAV imagery using **YOLOv11 with Or
 
 ## Features
 
-- Dedicated to **top-down satellite and UAV ortho imagery** using **YOLOv11-OBB (DOTAv1)** models (auto-downloaded on demand):
-  - **Vehicles (High Accuracy / Fast)**: `YOLOv11x-OBB` & `YOLOv11m-OBB` (`small vehicle`, `large vehicle`)
-  - **All 15 Aerial Classes**: Full DOTAv1 multi-class OBB detection
-  - **Maritime & Aviation**: `ship`, `harbor`, `plane`, `helicopter`
-  - **Infrastructure**: `bridge`, `storage tank`, `roundabout`
-  - **Sports Facilities**: `baseball diamond`, `tennis court`, `basketball court`, `ground track field`, `soccer ball field`, `swimming pool`
+- Dedicated to **top-down satellite and UAV ortho imagery** (all pretrained models auto-download on demand):
+  - **Vehicles (High Accuracy / Fast)**: `YOLOv11x-OBB` & `YOLOv11m-OBB` (`small vehicle`, `large vehicle`, DOTAv1)
+  - **All 15 Aerial Classes**: Full DOTAv1 multi-class OBB detection (`YOLOv11x-OBB`)
+  - **Maritime, Aviation, Infrastructure & Sports**: Ships, harbors, aircraft, bridges, storage tanks, roundabouts, courts & pools (`YOLOv11x-OBB`)
+  - **Buildings Footprint (Instance Segmentation)**: `keremberke/yolov8m-building-segmentation` (satellite/aerial building polygons)
+  - **Roads & Land Cover (Semantic Segmentation)**: `geospaitial-lab/segformer-b3-potsdam-512-512` (ISPRS Potsdam aerial ortho — roads/impervious surfaces, buildings, trees, vegetation & cars)
 - **Multiple basemaps** switchable directly in the Leaflet UI:
   - Taiwan NLSC UAV WMTS (`UAV111A03`)
   - Taiwan NLSC Ortho Photo (`PHOTO2`)
