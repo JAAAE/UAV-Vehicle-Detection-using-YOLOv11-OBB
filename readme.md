@@ -12,13 +12,10 @@ A web-based tool for detecting vehicles from UAV imagery using **YOLOv11 with Or
   - **Maritime, Aviation, Infrastructure & Sports**: Ships, harbors, aircraft, bridges, storage tanks, roundabouts, courts & pools (`YOLOv11x-OBB`)
   - **Buildings Footprint (Instance Segmentation)**: `keremberke/yolov8m-building-segmentation` (satellite/aerial building polygons)
   - **Roads & Land Cover (Semantic Segmentation)**: `geospaitial-lab/segformer-b3-potsdam-512-512` (ISPRS Potsdam aerial ortho — roads/impervious surfaces, buildings, trees, vegetation & cars)
-- **Multiple basemaps** switchable directly in the Leaflet UI:
-  - Taiwan NLSC UAV WMTS (`UAV111A03`)
-  - Taiwan NLSC Ortho Photo (`PHOTO2`)
-  - Taiwan NLSC e-Map (`EMAP`)
-  - Esri World Imagery
-  - Google Satellite
-  - OpenStreetMap
+- **Auto-discovered Taiwan NLSC UAV WMTS & multi-basemap support** switchable directly in the Leaflet UI (with search filter & auto-zoom to each UAV flight's coverage bounds):
+  - All live **Taiwan NLSC UAV WMTS** layers (auto-loaded from `wmts.nlsc.gov.tw` & `maps.nlsc.gov.tw/wmtsUAS` `GetCapabilities`)
+  - Taiwan NLSC Ortho Photo (`PHOTO2`, `PHOTO_MIX`) & e-Map (`EMAP`)
+  - Esri World Imagery, Google Satellite & OpenStreetMap
 - Interactive **web interface** using Leaflet with live basemap/model/confidence selectors, dynamic class legend, and rectangle ROI drawing.
 - Export RFC 7946-compliant detection results as **GeoJSON** (`detection_<model>.geojson`).
 - Integrates **YOLOv11-OBB** with **Python FastAPI** and **ngrok**.
